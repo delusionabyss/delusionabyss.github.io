@@ -1,0 +1,6 @@
+{
+  "name": "delusion abyss",
+  "description": "A quiet, eerie 3x3 spatial exploration experience in stark monochrome. Swipe and drift between nine panels to uncover creative endeavors, software, games, and hidden transmissions in the abyss.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

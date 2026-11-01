@@ -1,0 +1,84 @@
+@import "tailwindcss";
+@import "@fontsource/redaction-35";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --abyss-black: #000000;
+    --abyss-surface: #070706;
+    --abyss-white: #EAE6DF;
+    --abyss-muted: rgba(234, 230, 223, 0.58);
+    --abyss-faint: rgba(234, 230, 223, 0.22);
+    --abyss-hairline: rgba(234, 230, 223, 0.14);
+  }
+
+  * {
+    box-sizing: border-box;
+    border-color: rgba(234, 230, 223, 0.14);
+  }
+
+  html, body, #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #EAE6DF;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    overflow: hidden;
+    touch-action: none;
+  }
+}
+
+.font-ballet {
+  font-family: 'Ballet', cursive;
+  font-variation-settings: "opsz" 72;
+}
+
+.font-redaction-35 {
+  font-family: 'Redaction 35', 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-sankofa {
+  font-family: 'Sankofa Display', sans-serif;
+  letter-spacing: 0.08em;
+  word-spacing: 0.16em;
+}
+
+.font-tangerine {
+  font-family: 'Tangerine', cursive;
+}
+
+.font-serif-abyss {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-mono-abyss {
+  font-family: 'IBM Plex Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom subtle scrollbars for panels with inner reading lists */
+.abyss-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(234, 230, 223, 0.2) transparent;
+}
+.abyss-scroll::-webkit-scrollbar {
+  width: 3px;
+}
+.abyss-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.abyss-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(234, 230, 223, 0.22);
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.25; }
+  50% { opacity: 0.75; }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 5s ease-in-out infinite;
+}
+
